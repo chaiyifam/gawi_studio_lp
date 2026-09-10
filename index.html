@@ -1,19 +1,278 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gawi — 3D Printed Objects</title>
+  <title>Gawi — Objects for your desk</title>
 
-    <link rel="stylesheet" href="./style.css">
+  <meta
+    name="description"
+    content="Gawi is an independent studio creating functional desk objects through design and 3D printing."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
-    <h1>GAWI</h1>
-    <p>Objects made for your space.</p>
+  <main class="page">
 
-    <script src="./script.js"></script>
+    <!-- BRAND -->
+    <section class="brand">
+
+      <div class="brand-top">
+
+        <div class="logo" data-brand-name>
+          GAWI
+        </div>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          <span data-studio-label>DESIGN STUDIO</span>
+        </div>
+
+      </div>
+
+
+      <div class="hero-copy">
+
+        <h1 data-hero-title>
+          Objects for<br>
+          your desk.
+        </h1>
+
+        <p data-hero-description>
+          Independent studio creating functional
+          desk objects through design & 3D printing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LINKS -->
+    <section class="links">
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-card"
+        data-link="shopee"
+      >
+        <div>
+
+          <span class="link-number">
+            01
+          </span>
+
+          <span class="link-title">
+            Shop on Shopee
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ↗
+        </span>
+      </a>
+
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-card"
+        data-link="tiktok"
+      >
+        <div>
+
+          <span class="link-number">
+            02
+          </span>
+
+          <span class="link-title">
+            TikTok Shop
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ↗
+        </span>
+      </a>
+
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-card"
+        data-link="instagram"
+      >
+        <div>
+
+          <span class="link-number">
+            03
+          </span>
+
+          <span class="link-title">
+            Instagram
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ↗
+        </span>
+      </a>
+
+    </section>
+
+
+    <!-- FEATURED -->
+    <section class="featured">
+
+      <div class="featured-label">
+
+        <span>
+          FEATURED OBJECT
+        </span>
+
+        <span data-featured-number>
+          01 / 2026
+        </span>
+
+      </div>
+
+
+      <!-- VISUAL -->
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="product-visual"
+        data-featured-link
+      >
+
+        <div class="visual-grid"></div>
+
+        <div class="floating-label label-one">
+          MAGNETIC
+        </div>
+
+        <div class="floating-label label-two">
+          MODULAR
+        </div>
+
+
+        <!-- Abstract 3D object -->
+        <div class="product-object">
+
+          <div class="object-box box-back"></div>
+
+          <div class="object-box box-front">
+            <div class="box-opening"></div>
+          </div>
+
+          <div class="object-lid"></div>
+
+        </div>
+
+
+        <span class="visual-text">
+          G / 001
+        </span>
+
+        <div class="visual-arrow">
+          ↗
+        </div>
+
+      </a>
+
+
+      <!-- PRODUCT INFO -->
+      <div class="featured-info">
+
+        <div>
+
+          <span
+            class="object-category"
+            data-featured-category
+          >
+            CABLE MANAGEMENT
+          </span>
+
+          <h2 data-featured-name>
+            Magnetic Cable Box
+          </h2>
+
+          <p data-featured-description>
+            Modular cable storage designed
+            around everyday desk setups.
+          </p>
+
+        </div>
+
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="circle-button"
+          data-featured-link
+          aria-label="View featured product"
+        >
+          ↗
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- STUDIO NOTE -->
+    <section class="studio-note">
+
+      <div class="studio-symbol">
+        ✳
+      </div>
+
+      <p data-studio-tagline>
+        Small objects.<br>
+        Better desk spaces.
+      </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <span data-footer-left>
+        GAWI STUDIO
+      </span>
+
+      <span data-footer-right>
+        DESIGNED IN INDONESIA
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="./script.js"></script>
+
 </body>
 </html>

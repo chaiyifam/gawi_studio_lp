@@ -35,7 +35,10 @@ const GAWI_CONFIG = {
       "https://www.tiktok.com/@gawi.studio",
 
     instagram:
-      "https://www.instagram.com/gawi.works"
+      "https://www.instagram.com/gawi.works",
+
+    makerworld:
+      "https://makerworld.com/en/@gawi.studio"
 
   },
 
@@ -115,6 +118,11 @@ document.addEventListener(
     setLinks(
       "[data-link='instagram']",
       GAWI_CONFIG.links.instagram
+    );
+
+    setLinks(
+      "[data-link='makerworld']",
+      GAWI_CONFIG.links.makerworld
     );
 
 

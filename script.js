@@ -150,9 +150,8 @@ document.addEventListener(
       GAWI_CONFIG.contact.text
     );
 
-    setLinks(
-      "[data-contact-link]",
-      "mailto:" + GAWI_CONFIG.contact.email
+    setupContact(
+      GAWI_CONFIG.contact.email
     );
 
 
@@ -368,3 +367,76 @@ async function loadShopeeProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", loadShopeeProducts);
+
+
+/* ================================
+   KONTAK
+   mailto: tidak jalan di PC tanpa aplikasi email default,
+   jadi email juga otomatis disalin + ada tombol Gmail.
+================================ */
+
+function setupContact(email) {
+
+  const subject = "Collab / Custom order - GAWI";
+
+  const mailto =
+    "mailto:" + email +
+    "?subject=" + encodeURIComponent(subject);
+
+  const gmail =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    "&to=" + encodeURIComponent(email) +
+    "&su=" + encodeURIComponent(subject);
+
+  setLinks("[data-contact-link]", mailto);
+  setLinks("[data-gmail-link]", gmail);
+
+  // Umpan balik: tulisan tombol "Copy email" berubah sebentar
+  const copyButtons = document.querySelectorAll("[data-copy-email]");
+  let timer;
+
+  const showCopied = (text) => {
+    copyButtons.forEach(button => {
+      if (!button.dataset.label) button.dataset.label = button.textContent.trim();
+      button.textContent = text;
+      button.classList.add("is-done");
+    });
+    clearTimeout(timer);
+    timer = setTimeout(() => copyButtons.forEach(button => {
+      button.textContent = button.dataset.label;
+      button.classList.remove("is-done");
+    }), 2200);
+  };
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      return true;
+    } catch (e) {
+      const area = document.createElement("textarea");
+      area.value = email;
+      area.style.position = "fixed";
+      area.style.opacity = "0";
+      document.body.append(area);
+      area.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch (e2) {}
+      area.remove();
+      return ok;
+    }
+  };
+
+  // Klik alamat email → buka aplikasi email + salin (cadangan kalau tidak ada aplikasi email)
+  document.querySelectorAll("[data-contact-link]").forEach(link => {
+    link.addEventListener("click", async () => {
+      if (await copy()) showCopied("Email copied ✓");
+    });
+  });
+
+  copyButtons.forEach(button => {
+    button.addEventListener("click", async () => {
+      showCopied(await copy() ? "Copied ✓" : email);
+    });
+  });
+
+}

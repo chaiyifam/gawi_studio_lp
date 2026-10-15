@@ -137,8 +137,6 @@
         </span>
       </a>
 
-    </section>
-
 
       <a
         href="#"
@@ -193,6 +191,9 @@
       >
 
         <div class="visual-grid"></div>
+
+        <!-- Foto produk terlaris #1 (diisi otomatis dari products.json) -->
+        <img class="product-photo" data-featured-photo alt="" hidden />
 
         <div class="floating-label label-one">
           MAGNETIC
@@ -264,6 +265,19 @@
         </a>
 
       </div>
+
+    </section>
+
+
+    <!-- BEST SELLERS (dari products.json — jalankan update-produk.bat) -->
+    <section class="bestsellers" data-bestsellers hidden>
+
+      <div class="featured-label">
+        <span>BEST SELLERS</span>
+        <span data-products-updated></span>
+      </div>
+
+      <div class="product-list" data-product-list></div>
 
     </section>
 

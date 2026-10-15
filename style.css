@@ -854,3 +854,71 @@ footer {
 
   overflow: hidden;
 }
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+  margin-top: 72px;
+}
+
+.contact-card {
+  display: block;
+
+  padding: 26px 22px 22px;
+
+  border-radius: 5px;
+
+  background: #111;
+  color: #efeee9;
+
+  text-decoration: none;
+
+  transition: transform .25s ease;
+}
+
+.contact-card p {
+  margin: 0 0 44px;
+
+  font-size: 27px;
+
+  line-height: 1.05;
+
+  letter-spacing: -1.2px;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid rgba(239, 238, 233, .25);
+
+  font-size: 16px;
+
+  letter-spacing: -0.2px;
+
+  word-break: break-all;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+}
+
+.contact-card:hover .arrow {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 420px) {
+
+  .contact-card p {
+    font-size: 24px;
+  }
+
+}

@@ -44,6 +44,20 @@ const GAWI_CONFIG = {
 
 
 
+  contact: {
+
+    email:
+      "halo@gawi.studio",
+
+    text: `
+      Open for collaborations<br>
+      & custom orders.
+    `
+
+  },
+
+
+
   featured: {
 
     number:
@@ -123,6 +137,22 @@ document.addEventListener(
     setLinks(
       "[data-link='makerworld']",
       GAWI_CONFIG.links.makerworld
+    );
+
+
+    setText(
+      "[data-contact-email]",
+      GAWI_CONFIG.contact.email
+    );
+
+    setHTML(
+      "[data-contact-text]",
+      GAWI_CONFIG.contact.text
+    );
+
+    setLinks(
+      "[data-contact-link]",
+      "mailto:" + GAWI_CONFIG.contact.email
     );
 
 

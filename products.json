@@ -1,4 +1,25 @@
 {
-  "updatedAt": null,
-  "products": []
+  "updatedAt": "2026-10-15T11:10:04.995Z",
+  "products": [
+    {
+      "id": "56368499384",
+      "name": "Tempat Kabel Organizer Engsel Magnetik dan Modular",
+      "image": "https://cf.shopee.co.id/file/id-11134207-81ztp-mtng6dfoffgo74",
+      "price": null,
+      "originalPrice": null,
+      "sold": 0,
+      "rating": null,
+      "url": "https://shopee.co.id/product/1929450331/56368499384"
+    },
+    {
+      "id": "41334818105",
+      "name": "Tempat Baterai AA, AAA",
+      "image": "https://cf.shopee.co.id/file/id-11134201-81ztd-mtneiuh0kp38e1",
+      "price": null,
+      "originalPrice": null,
+      "sold": 0,
+      "rating": null,
+      "url": "https://shopee.co.id/product/1929450331/41334818105"
+    }
+  ]
 }

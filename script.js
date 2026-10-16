@@ -84,10 +84,9 @@ document.addEventListener(
   "DOMContentLoaded",
   () => {
 
-    setText(
-      "[data-brand-name]",
-      GAWI_CONFIG.brand.name
-    );
+    document
+      .querySelectorAll("[data-brand-logo]")
+      .forEach(img => img.alt = GAWI_CONFIG.brand.name);
 
     setText(
       "[data-studio-label]",

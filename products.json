@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T11:10:04.995Z",
+  "updatedAt": "2026-11-07T09:57:36.846Z",
   "products": [
     {
       "id": "56368499384",
@@ -12,14 +12,44 @@
       "url": "https://shopee.co.id/product/1929450331/56368499384"
     },
     {
-      "id": "41334818105",
-      "name": "Tempat Baterai AA, AAA",
-      "image": "https://cf.shopee.co.id/file/id-11134201-81ztd-mtneiuh0kp38e1",
+      "id": "55321208044",
+      "name": "Pembatas Buku, bookmark 3d print hewan",
+      "image": "https://cf.shopee.co.id/file/id-11134201-81zti-mv720bbzzh1de8",
       "price": null,
       "originalPrice": null,
       "sold": 0,
       "rating": null,
-      "url": "https://shopee.co.id/product/1929450331/41334818105"
+      "url": "https://shopee.co.id/product/1929450331/55321208044"
+    },
+    {
+      "id": "50869294011",
+      "name": "GPU Holder Adjustable - Penyangga VGA 3D Print",
+      "image": "https://cf.shopee.co.id/file/id-11134207-81ztm-mucamfp2io0ad0",
+      "price": null,
+      "originalPrice": null,
+      "sold": 0,
+      "rating": null,
+      "url": "https://shopee.co.id/product/1929450331/50869294011"
+    },
+    {
+      "id": "47021057508",
+      "name": "Papan Peringatan Mini 3d Print Rambu Peringatan Mini Custom 3D Print",
+      "image": "https://cf.shopee.co.id/file/id-11134207-81ztj-mv1eg498l05i8d",
+      "price": null,
+      "originalPrice": null,
+      "sold": 0,
+      "rating": null,
+      "url": "https://shopee.co.id/product/1929450331/47021057508"
+    },
+    {
+      "id": "46570122655",
+      "name": "Rak HP Dinding Hanger Holder Charger Tembok Tempat Handphone Dudukan Gantungan Wall",
+      "image": "https://cf.shopee.co.id/file/id-11134207-81ztg-muvjiehqn0g4e1",
+      "price": null,
+      "originalPrice": null,
+      "sold": 0,
+      "rating": null,
+      "url": "https://shopee.co.id/product/1929450331/46570122655"
     }
   ]
 }
